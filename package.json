@@ -1,0 +1,16 @@
+{
+  "name": "detect-onebyte-encoding",
+  "description": "Detecting string encoding ",
+  "version": "1.0",
+  "author": {
+    "name": "Alexey Kasyanchuk",
+    "email": "degitx@gmail.com",
+    "url": "https://webtorrent.io"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DEgITx/detect-onebyte-encoding.git"
+  }
+}
