@@ -25,7 +25,7 @@ function readEncondng(fileName)
 	let mp
 	while(mp = reg.exec(encondingFile))
 	{
-		const enc = (fileName.split('.')[0]).toLowerCase()
+		const enc = (fileName.split('/').slice(-1)[0].split('.')[0]).toLowerCase()
 		if(!encodingMap[mp[2]])
 			encodingMap[mp[2]] = {symbol: mp[1], encoding: [enc]}
 		else
@@ -70,15 +70,15 @@ function detectEncoding(str)
 	return resultEncoding
 }
 
-readEncondng('CP874.TXT')
-readEncondng('CP1250.TXT')
-readEncondng('CP1251.TXT')
-readEncondng('CP1252.TXT')
-readEncondng('CP1253.TXT')
-readEncondng('CP1254.TXT')
-readEncondng('CP1255.TXT')
-readEncondng('CP1256.TXT')
-readEncondng('CP1257.TXT')
-readEncondng('CP1258.TXT')
+readEncondng(__dirname + '/CP874.TXT')
+readEncondng(__dirname + '/CP1250.TXT')
+readEncondng(__dirname + '/CP1251.TXT')
+readEncondng(__dirname + '/CP1252.TXT')
+readEncondng(__dirname + '/CP1253.TXT')
+readEncondng(__dirname + '/CP1254.TXT')
+readEncondng(__dirname + '/CP1255.TXT')
+readEncondng(__dirname + '/CP1256.TXT')
+readEncondng(__dirname + '/CP1257.TXT')
+readEncondng(__dirname + '/CP1258.TXT')
 
 module.exports = detectEncoding
