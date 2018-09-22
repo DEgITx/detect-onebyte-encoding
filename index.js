@@ -67,8 +67,6 @@ function detectEncoding(str)
 		}
 	}
 
-	console.log(results)
-
 	return resultEncoding
 }
 

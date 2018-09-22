@@ -5,7 +5,7 @@
   "author": {
     "name": "Alexey Kasyanchuk",
     "email": "degitx@gmail.com",
-    "url": "https://webtorrent.io"
+    "url": "https://github.com/DEgITx/detect-onebyte-encoding"
   },
   "license": "MIT",
   "main": "index.js",
