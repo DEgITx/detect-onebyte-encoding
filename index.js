@@ -67,6 +67,10 @@ function detectEncoding(str)
 		}
 	}
 
+	if(max != str.length) {
+		return 'utf8'
+	}
+
 	return resultEncoding
 }
 

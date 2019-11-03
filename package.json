@@ -1,7 +1,7 @@
 {
   "name": "detect-onebyte-encoding",
   "description": "Detecting string encoding ",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "Alexey Kasyanchuk",
     "email": "degitx@gmail.com",
